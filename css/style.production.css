@@ -38,11 +38,11 @@ a:hover, a:focus {/* No underlining when hovering over a link */
 }
 
 a:visited {/* visited link */
-  color: rgb(117, 41, 117);
+  color: rgb(0, 0, 0);
 }
 
 a:active {/* selected link */
-  color: #357b70;
+  color: #1d7195;
 }
 
 button {/* overwrites browser defaults and resets the broder */
@@ -110,7 +110,7 @@ div {
     height: auto;
     width: 250px;
     margin-right: 40px;
-    border-radius: 50%;
+    border-radius: 25%;
 }
 
 .profile {

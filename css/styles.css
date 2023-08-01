@@ -2,7 +2,7 @@
     --primary-color: #357b70;
     --secondary-color: #e0b354;
     --background-color: #c7bfbf;
-    --visited-link: rgb(117, 41, 117);
+    --visited-link: rgb(0, 0, 0);
     --border-bottom: #000000;
     --button-color: #6676cd;
     --secondary-text-color: white;
@@ -91,9 +91,9 @@ div {
 .profile__portrait {
     float: left;
     height: auto;
-    width: 250px;
+    width: 265px;
     margin-right: 40px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 .profile {
