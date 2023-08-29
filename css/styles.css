@@ -3,11 +3,11 @@
     --secondary-color: #e0b354;
     --background-color: #c7bfbf;
     --visited-link: rgb(0, 0, 0);
-    --border-bottom: #000000;
+    --border-bottom: #0000;
     --button-color: #6676cd;
     --secondary-text-color: white;
-    --third-text-color: #000000;
-  }
+    --third-text-color: #0000;
+}
 
 .header_title {
     /* no spacing to top and bottom and auto spacing to left and right, which centers the container horizontally */
@@ -18,14 +18,15 @@ body {
     font-family: 'lato', sans-serif;
     font-weight: 400;
 }
+
 h1 {
     font-size: 30px;
     font-weight: 700;
 }
 
 h2 {
-  font-size: 24px;
-  font-weight: 700;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 h3 {
@@ -34,35 +35,47 @@ h3 {
 }
 
 a {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
-a:hover, a:focus {/* No underlining when hovering over a link */
-  text-decoration: none;
+a:hover,
+a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
 }
 
-a:visited {/* visited link */
-  color: var(--visited-link);
+a:visited {
+    /* visited link */
+    color: var(--visited-link);
 }
 
-a:active {/* selected link */
-  color: var(--primary-color);
+a:active {
+    /* selected link */
+    color: var(--primary-color);
 }
 
-button, .button {/* overwrites browser defaults and resets the broder */
-  border: none;
-  font-family: inherit;/* styles the background color, font color, and tex decor of the button*/
-  background-color: var(--button-color);
-  color: var(--secondary-text-color);
-  text-decoration: none;/* adds spacing to the button a battom border with a width od 2px, a type of solid, and a color in RGBA format */
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid var(--border-bottom);
-  transition: opacity 0.2s;
+button,
+.button {
+    /* overwrites browser defaults and resets the broder */
+    border: none;
+    font-family: inherit;
+    /* styles the background color, font color, and tex decor of the button*/
+    background-color: var(--button-color);
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    /* adds spacing to the button a battom border with a width od 2px, a type of solid, and a color in RGBA format */
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid var(--border-bottom);
+    transition: opacity 0.2s;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
-    cursor: pointer;/* reduces the opacity of the button to 80% */
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
     opacity: 0.8;
 }
 
@@ -76,9 +89,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 div {
-    padding: 10px; /* adds a 10px inner spacing to all sides */
-    margin: 10px; /* adds a 10px outer spacing to all sides */
-    border: none /* attributes describe: thickness, type, color */
+    padding: 10px;
+    /* adds a 10px inner spacing to all sides */
+    margin: 10px;
+    /* adds a 10px outer spacing to all sides */
+    border: none
+        /* attributes describe: thickness, type, color */
 }
 
 .aboutsection {
@@ -148,15 +164,16 @@ div {
     display: inline-block;
     width: 33%;
 }
+
 /* end grid fallback */
 
 @supports (display: grid) {
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    margin: 0;
-}
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 0;
+    }
 }
 
 .grid {
@@ -195,19 +212,22 @@ div {
     .grid {
         grid-gap: 10px
     }
+
     .grid__item:last-child {
         grid-column: auto/auto;
         grid-row: auto/auto;
     }
+
     h1 {
         font-size: 22px;
     }
 }
 
-@keyframes sun  {
+@keyframes sun {
     from {
         fill: #edc655;
     }
+
     to {
         fill: #f76414;
     }
@@ -216,17 +236,19 @@ div {
 @keyframes sun-set {
     from {
         transform: translate(2433.2px, -600.77px);
-      }
-      to {
-        transform: translate(2433.2px, -500px);
-      }
     }
+
+    to {
+        transform: translate(2433.2px, -500px);
+    }
+}
 
 @keyframes color-change2 {
     from {
         fill: #eaed55;
         opacity: 100%;
     }
+
     to {
         fill: #111e38;
         opacity: 50%;
@@ -234,7 +256,7 @@ div {
 }
 
 #path6619 {
-   animation: 10s sun-set infinite alternate linear;
+    animation: 10s sun-set infinite alternate linear;
 }
 
 #svg3541 {
